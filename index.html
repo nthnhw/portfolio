@@ -5,40 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nathan Wieters — Operations &amp; Research</title>
   <meta name="description" content="Nathan Wieters — operations and research professional in San Antonio, TX. Records and data governance, AI governance, KPI systems, and process design.">
+  <meta property="og:title" content="Nathan Wieters — Operations & Research">
+  <meta property="og:description" content="I turn ambiguous, fragmented initiatives into structured, auditable, repeatable systems.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%239a5233'/><text x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23fffaf3' text-anchor='middle'>NW</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <a href="#top" class="logo">NW</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-      <button id="theme-toggle" aria-label="Toggle dark mode">◐</button>
-    </nav>
-  </header>
+  <div class="nav-wrap">
+    <header class="nav">
+      <a href="#top" class="logo">NW</a>
+      <nav>
+        <a href="#about" class="hide-sm">About</a>
+        <a href="#work">Work</a>
+        <a href="#experience" class="hide-sm">Experience</a>
+        <a href="resume.html">Résumé</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+      </nav>
+    </header>
+  </div>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <p class="eyebrow">Hi, I'm</p>
+      <p class="eyebrow">Operations · Governance · Research</p>
       <h1>Nathan Wieters</h1>
-      <p class="lead">Operations and research professional who takes ambiguous, fragmented initiatives and turns them into structured, auditable, repeatable systems.</p>
+      <p class="lead">I take ambiguous, fragmented initiatives and turn them into structured, auditable, repeatable systems. Based in San Antonio, TX.</p>
       <div class="cta">
         <a href="#work" class="btn primary">See my work</a>
-        <a href="#contact" class="btn">Get in touch</a>
+        <a href="resume.html" class="btn">View résumé</a>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about">
       <h2>About</h2>
-      <p>I'm based in San Antonio, TX. Most recently I've been at VelocityTX Innovation Center, where I led records and data governance, co-led the organization's AI adoption program, and directed the build of an internal strategy-tracking web app. Before that, I spent years in academic research at Texas A&amp;M University–San Antonio, managing a cognitive psychology lab, supervising 15 research assistants, and teaching research methods and statistics.</p>
-      <p>The common thread: records and data governance, process standardization, and leading cross-functional work without a prior playbook. A lot of my recent work is executed with AI tools (Claude and Claude Code) under my direction: I define requirements, design the systems and data models, set verification standards, and make the judgment calls.</p>
+      <p>At VelocityTX Innovation Center I've led records and data governance, co-led the organization's AI adoption program, and directed the build of an internal strategy-tracking web app. Before that I spent years in academic research at Texas A&amp;M University–San Antonio, managing a cognitive psychology lab, supervising 15 research assistants, and teaching research methods and statistics.</p>
+      <p>The common thread is records and data governance, process standardization, and leading cross-functional work without a prior playbook. Much of my recent work is executed with AI tools (Claude and Claude Code) under my direction: I define the requirements, design the systems and data models, set verification standards, and make the judgment calls.</p>
       <ul class="skills">
         <li>Records &amp; data governance</li>
         <li>AI governance</li>
@@ -58,33 +65,39 @@
       <div class="grid">
         <article class="card">
           <span class="tag">Governance</span>
+          <span class="metric">~150 duplicates resolved</span>
           <h3>Enterprise Records &amp; Information Governance</h3>
-          <p>Audited five SharePoint sites at file level and resolved ~150 duplicate records with zero content loss. Designed a four-tier structure, naming standard, and retention framework, which gave leadership one verified source of truth instead of a dozen competing copies.</p>
+          <p>Audited five SharePoint sites at file level with zero content loss. Designed a four-tier structure, naming standard, and retention framework, which gave leadership one verified source of truth instead of a dozen competing copies.</p>
         </article>
         <article class="card">
           <span class="tag">AI · Policy</span>
+          <span class="metric">Survey → adopted policy</span>
           <h3>AI Adoption &amp; Governance Program</h3>
-          <p>Co-led org-wide AI adoption from staff survey to an adopted AI Use Policy (7 review rounds). Built the account request process, training materials, a staff FAQ, and a multi-year tooling budget model.</p>
+          <p>Co-led org-wide AI adoption, taking an AI Use Policy through seven review rounds to adoption. Built the account request process, training materials, a staff FAQ, and a multi-year tooling budget model.</p>
         </article>
         <article class="card">
           <span class="tag">Software</span>
+          <span class="metric">0 discrepancies</span>
           <h3>Strategic Plan KPI System &amp; Web App</h3>
-          <p>Specified and directed a production web app tracking goals, strategies, tactics, KPIs, and budget lines, with role-based views. I migrated the full 2027 strategic plan into it with zero discrepancies. Built with Next.js, Prisma, PostgreSQL, Auth.js, and Vercel.</p>
+          <p>Specified and directed a production web app tracking goals, strategies, tactics, KPIs, and budget lines with role-based views, then migrated the full 2027 strategic plan into it. Built with Next.js, Prisma, PostgreSQL, and Vercel.</p>
         </article>
         <article class="card">
           <span class="tag">Finance</span>
+          <span class="metric">~20% cost reduction</span>
           <h3>IT Vendor Financial Audit</h3>
-          <p>Reconciled every contract, invoice, and line item against the governing agreement. Corrected rate and user-count errors, recovered charges, and cut monthly IT costs by about 20%.</p>
+          <p>Reconciled every contract, invoice, and line item against the governing agreement. Corrected rate and user-count errors and recovered erroneous charges.</p>
         </article>
         <article class="card">
           <span class="tag">Governance</span>
+          <span class="metric">Audit-ready records</span>
           <h3>Board Records &amp; Onboarding</h3>
-          <p>Reorganized Board of Directors records into a structured member system, resolved historical discrepancies across years of minutes, and built a single, repeatable board onboarding process.</p>
+          <p>Reorganized Board of Directors records into a structured member system, resolved historical discrepancies across years of minutes, and built one repeatable onboarding process.</p>
         </article>
         <article class="card">
           <span class="tag">Data</span>
+          <span class="metric">1,377 responses analyzed</span>
           <h3>Workforce Program Impact Analysis</h3>
-          <p>Consolidated 288 participant records and 1,377 survey responses, caught a column-shift defect, and delivered an interactive dashboard with a ZIP-level heat map tied to strategic-plan metrics.</p>
+          <p>Consolidated 288 participant records with survey data, caught a column-shift defect, and delivered an interactive dashboard with a ZIP-level heat map tied to strategic-plan metrics.</p>
         </article>
       </div>
     </section>
@@ -130,11 +143,30 @@
       </div>
     </section>
 
+    <!-- DOCUMENTS -->
+    <section id="documents">
+      <h2>Résumé &amp; CV</h2>
+      <div class="doc-cards">
+        <a href="resume.html" class="card doc-card">
+          <span class="tag">For industry roles</span>
+          <h3>Résumé</h3>
+          <p>Operations, governance, and research experience on one page.</p>
+          <span class="link">View &amp; download →</span>
+        </a>
+        <a href="cv.html" class="card doc-card">
+          <span class="tag">For academic roles</span>
+          <h3>Curriculum Vitae</h3>
+          <p>Full research record: publications, presentations, teaching, and awards.</p>
+          <span class="link">View &amp; download →</span>
+        </a>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Open to operations, governance, and research roles in San Antonio or remote. Let's talk.</p>
-      <div class="cta">
+      <h2>Let's talk</h2>
+      <p>Open to operations, governance, and research roles in San Antonio or remote.</p>
+      <div class="cta" style="margin-top:24px">
         <a href="mailto:nhwieters@icloud.com" class="btn primary">Email me</a>
         <a href="https://www.linkedin.com/in/nathan-wieters-a860b117b" class="btn" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/nthnhw" class="btn" target="_blank" rel="noopener">GitHub</a>
@@ -142,18 +174,8 @@
     </section>
   </main>
 
-  <footer>© <span id="year"></span> Nathan Wieters · San Antonio, TX</footer>
+  <footer><span>© <span id="year"></span> Nathan Wieters</span><span>San Antonio, TX</span></footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const root = document.documentElement, btn = document.getElementById('theme-toggle');
-    try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
-    btn.addEventListener('click', () => {
-      const dark = root.dataset.theme ? root.dataset.theme === 'dark'
-        : matchMedia('(prefers-color-scheme: dark)').matches;
-      root.dataset.theme = dark ? 'light' : 'dark';
-      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
-    });
-  </script>
+  <script src="theme.js"></script>
 </body>
 </html>
