@@ -97,3 +97,12 @@ footer {
   .hero { padding: 72px 0 64px; }
   .timeline .item { grid-template-columns: 1fr; gap: 4px; }
 }
+
+.tag {
+  display: inline-block; font-size: 12px; font-weight: 500; color: var(--accent);
+  margin-bottom: 10px; letter-spacing: .3px; text-transform: uppercase;
+}
+section > p + p { margin-top: 14px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.two-col p { color: var(--muted); font-size: 15px; margin-bottom: 12px; }
+@media (max-width: 640px) { .two-col { grid-template-columns: 1fr; gap: 24px; } }
