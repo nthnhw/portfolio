@@ -254,3 +254,18 @@ a.file:hover { border-color: var(--muted); }
   .hero-split .portrait.tall { max-width: 240px; }
   .gallery { grid-template-columns: 1fr 1fr; }
 }
+
+/* ---------- Glanceable work cards ---------- */
+.section-sub { color: var(--muted); margin: -16px 0 28px; }
+.card.work { display: flex; flex-direction: column; color: inherit; }
+.card.work .metric { font-size: 40px; margin-bottom: 2px; }
+.metric-label { display: block; color: var(--muted); font-size: 13.5px; line-height: 1.4; margin-bottom: 18px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.card.work h3 { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 20px; line-height: 1.25; margin-bottom: 8px; }
+.card.work p { flex: 1; margin-bottom: 14px; }
+
+/* ---------- Archive stat row ---------- */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 8px 0 8px; }
+.stats div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.stats b { display: block; font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 28px; color: var(--accent); line-height: 1.1; }
+.stats span { color: var(--muted); font-size: 13.5px; line-height: 1.35; display: block; margin-top: 4px; }
+.case > p { color: var(--muted); max-width: 720px; }
