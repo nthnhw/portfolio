@@ -269,3 +269,9 @@ a.file:hover { border-color: var(--muted); }
 .stats b { display: block; font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 28px; color: var(--accent); line-height: 1.1; }
 .stats span { color: var(--muted); font-size: 13.5px; line-height: 1.35; display: block; margin-top: 4px; }
 .case > p { color: var(--muted); max-width: 720px; }
+
+/* ---------- Insight cards ---------- */
+.card.work .num { font-family: "Fraunces", Georgia, serif; font-size: 15px; color: var(--accent); margin-bottom: 14px; display: block; }
+.card.work h3 { font-size: 23px; margin-bottom: 10px; }
+.card.work .example { display: block; font-size: 13.5px; color: var(--muted); padding-top: 14px; margin-bottom: 14px; border-top: 1px solid var(--line); }
+.card.work .example b { color: var(--text); font-weight: 600; }
