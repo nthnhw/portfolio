@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Archive — Nathan Wieters</title>
+  <meta name="description" content="In-depth case studies of Nathan Wieters' operations, governance, data, and research work.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%239a5233'/><text x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23fffaf3' text-anchor='middle'>NW</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="nav-wrap">
+    <header class="nav">
+      <a href="index.html" class="logo">NW</a>
+      <nav>
+        <a href="archive.html" aria-current="page">Archive</a>
+        <a href="files.html">Files</a>
+        <a href="resume.html">Résumé</a>
+        <a href="me.html" class="hide-sm">Off the clock</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+      </nav>
+    </header>
+  </div>
+
+  <main>
+    <section class="hero" style="padding-bottom:48px">
+      <p class="eyebrow">Project archive</p>
+      <h1 style="font-size:clamp(38px,6vw,56px)">The full write-ups</h1>
+      <p class="lead">The six bodies of work behind the portfolio, each with the context, what I directed and decided, the tools, and the result. Plus my research projects.</p>
+      <ul class="toc">
+        <li><a href="#records">Records &amp; information governance</a></li>
+        <li><a href="#ai">AI adoption &amp; governance</a></li>
+        <li><a href="#kpi">KPI system &amp; web app</a></li>
+        <li><a href="#vendor">IT vendor audit</a></li>
+        <li><a href="#board">Board records</a></li>
+        <li><a href="#workforce">Workforce impact analysis</a></li>
+        <li><a href="#research">Research projects</a></li>
+      </ul>
+    </section>
+
+    <section class="note-sec">
+      <p class="note"><b>A note on method:</b> much of this work was executed with AI tools (Claude and Claude Code) working under my direction. I defined the requirements, designed the systems and data models, set the verification standards, reviewed the output, caught and corrected errors, and made every judgment call. Supporting documents and work product are available on request.</p>
+    </section>
+
+    <section id="records" class="case">
+      <span class="tag">Governance · VelocityTX</span>
+      <h2>Enterprise Records &amp; Information Governance System</h2>
+      <p class="context"><b>Context.</b> Years of operational documentation (policies, board records, vendor contracts, financial files, HR forms) were scattered across five SharePoint sites with no consistent structure, no naming standard, and no reliable way to tell a current document from a superseded one.</p>
+      <h3>What I built</h3>
+      <ul>
+        <li>Designed a four-tier organizational model (Hub → Arm → Category → File) and a naming and status convention where a document's status is signaled by its location, not by tags cluttering every filename.</li>
+        <li>Set a redundancy-verification standard requiring genuine content comparison (text diff, cell-by-cell spreadsheet comparison, checksums) before any file could be treated as a duplicate.</li>
+        <li>Audited all five SharePoint sites at file level, resolving roughly 150 confirmed or flagged duplicates with zero content loss, and built a five-tier retention framework with an execution-ready deletion schedule.</li>
+        <li>Re-architected the structure around actual departments, consolidating overlapping folder trees without losing version history.</li>
+        <li>Distilled the audit into nine topical reference files (corporate structure, finance, governance, vendors, programs), resolving a dozen competing org-chart versions and six-plus handbook versions into one verified reference.</li>
+        <li>Identified and responsibly escalated a live data-security exposure found during the audit.</li>
+      </ul>
+      <p class="tools"><b>Tools:</b> SharePoint &amp; OneDrive administration · Microsoft 365 · checksum and XML-level file verification · large-scale document review directed through Claude</p>
+      <p class="outcome"><b>Outcome.</b> A searchable, auditable single source of truth across the SharePoint environment, with leadership working from one verified reference instead of a dozen competing copies.</p>
+    </section>
+
+    <section id="ai" class="case">
+      <span class="tag">AI · Policy · VelocityTX</span>
+      <h2>AI Adoption &amp; Governance Program</h2>
+      <p class="context"><b>Context.</b> The organization needed to adopt AI tools responsibly, with real policy, training, and oversight rather than informal use without guardrails.</p>
+      <h3>What I led</h3>
+      <ul>
+        <li>Co-led the initiative from initial staff survey through a published, enforceable governance policy.</li>
+        <li>Designed and ran a staff-wide survey on AI use, concerns, and training needs, and translated the findings directly into policy decisions.</li>
+        <li>Drafted and shepherded the AI Use Policy through seven rounds of stakeholder review to its adopted version, covering acceptable use, data handling, and account authorization.</li>
+        <li>Built a fillable AI account request and justification form, replacing an ad hoc approval process with an auditable one.</li>
+        <li>Ran a seven-session stakeholder meeting series, with facilitator materials, decks, and a plain-language staff FAQ.</li>
+        <li>Built a multi-year cost allocation and budget model for AI tooling by department and funding line, and wrote staff training and transition guides.</li>
+      </ul>
+      <p class="tools"><b>Tools:</b> policy drafting · stakeholder facilitation · survey design &amp; analysis · Microsoft 365 forms · Excel budget modeling</p>
+      <p class="outcome"><b>Outcome.</b> A fully adopted, versioned AI Use Policy with a working approval process, a trained and surveyed staff, and a forward-looking budget.</p>
+    </section>
+
+    <section id="kpi" class="case">
+      <span class="tag">Software · Strategy · VelocityTX</span>
+      <h2>Strategic Plan KPI System &amp; Custom Web Application</h2>
+      <p class="context"><b>Context.</b> The board-approved strategic plan, with annual goals cascading into dozens of strategies, tactics, and KPIs, lived only in static spreadsheets, making ownership, progress, and board reporting hard to track.</p>
+      <h3>What I architected and directed</h3>
+      <ul>
+        <li>Designed an org-wide KPI tracking system that turned a static planning document into one people could be held accountable to.</li>
+        <li>Wrote the complete technical specification (data model, user roles, screen-by-screen requirements, build sequencing) and directed the build of a production web app through Claude Code, reviewing and iterating myself.</li>
+        <li>Migrated the real 2027 strategic plan (three dozen-plus strategies with owners) into the app and verified every record against the governing document, with zero discrepancies.</li>
+        <li>Directed a second phase: an employee services portal with a policy library, department SOPs with approval and expiration workflow, and quick-access resources.</li>
+        <li>Designed five board-ready dashboard concepts (executive scorecard, status heat map, year-to-date tracking, impact narrative), clearly separating real data from estimates.</li>
+        <li>Evaluated API integration feasibility with HR/payroll and facilities-access platforms before committing engineering time.</li>
+        <li>Applied WCAG 2.2 AA accessibility standards and Nielsen Norman Group heuristics to the interface.</li>
+      </ul>
+      <p class="tools"><b>Tools:</b> Next.js (React) · Prisma · PostgreSQL · Auth.js · Vercel · technical specification &amp; data modeling</p>
+      <p class="outcome"><b>Outcome.</b> A live internal application giving leadership real-time visibility into strategic plan execution, built on an architecture designed to grow into a company-wide operations platform.</p>
+    </section>
+
+    <section id="vendor" class="case">
+      <span class="tag">Finance · VelocityTX</span>
+      <h2>IT Vendor Financial Audit &amp; Reconciliation</h2>
+      <p class="context"><b>Context.</b> Years of billing complexity with the managed IT vendor: unclear user counts, inconsistent rate assumptions, and no reconciled record of what was owed versus contracted.</p>
+      <h3>What I did</h3>
+      <ul>
+        <li>Audited every contract, invoice, and billed line item against the signed governing agreement.</li>
+        <li>Found and corrected a billing-rate error and a user/mailbox-count discrepancy, reconciling the bill to the contracted rate card with zero variance.</li>
+        <li>Recovered erroneous charges through invoice and vendor correspondence, cutting effective monthly IT cost by about 20%.</li>
+        <li>Built a per-employee cost allocation and budget model tying each line item to its department and funding code.</li>
+        <li>Identified and escalated a separate data-security exposure without reproducing the sensitive material.</li>
+      </ul>
+      <p class="tools"><b>Tools:</b> contract &amp; invoice reconciliation · Excel financial modeling · Microsoft 365 administration · vendor and finance coordination</p>
+      <p class="outcome"><b>Outcome.</b> A fully reconciled vendor relationship with a ~20% recurring cost reduction and a clean audit trail for future renewals.</p>
+    </section>
+
+    <section id="board" class="case">
+      <span class="tag">Governance · VelocityTX</span>
+      <h2>Board of Directors Records &amp; Governance Support</h2>
+      <p class="context"><b>Context.</b> Board documentation (member records, minutes, committee structure, onboarding) had grown organically for years, leaving real gaps in the institutional record.</p>
+      <h3>What I did</h3>
+      <ul>
+        <li>Reorganized board records into a current / former / candidate member system with individual records per member.</li>
+        <li>Audited years of minutes and governance documents to resolve historical discrepancies and trace open questions to their source.</li>
+        <li>Designed and led a board onboarding initiative, consolidating scattered materials into one structure.</li>
+        <li>Found and fixed misfiled and mislabeled historical records.</li>
+      </ul>
+      <p class="outcome"><b>Outcome.</b> A complete, current, audit-ready governance record and a repeatable onboarding process.</p>
+    </section>
+
+    <section id="workforce" class="case">
+      <span class="tag">Data · VelocityTX</span>
+      <h2>Workforce Development Program Data &amp; Impact Analysis</h2>
+      <p class="context"><b>Context.</b> A STEM career-exposure program for San Antonio students had years of participant, demographic, and survey data spread across partial, inconsistent exports.</p>
+      <h3>What I built</h3>
+      <ul>
+        <li>Consolidated the exports into one master dataset: 288 demographic records cross-referenced with 1,377 survey responses, catching a column-shift defect that would have silently corrupted the analysis.</li>
+        <li>Built a household impact model with income-bracket classification against federal housing income limits and ZIP-level income context, plus pre/post outcomes by demographic group.</li>
+        <li>Compiled a 90-event activity log and delivered the analysis as an interactive dashboard with a ZIP-level heat map tied to strategic-plan metrics.</li>
+        <li>Stripped personally identifiable information from all working and delivered datasets.</li>
+      </ul>
+      <p class="outcome"><b>Outcome.</b> The organization's first consolidated, error-checked view of program reach and impact across multiple years.</p>
+    </section>
+
+    <section id="research" class="case">
+      <span class="tag">Research · TAMUSA</span>
+      <h2>Research projects</h2>
+      <p class="context">Memory, Attention &amp; Perception Lab, Texas A&amp;M University–San Antonio, with Dr. Dawn Weatherford. My research focuses on face recognition, identity verification, and how people make (and miss) matching decisions.</p>
+      <div class="grid" style="margin-top:20px">
+        <article class="card">
+          <h3>Dual tasks &amp; ID verification</h3>
+          <p>How does doing two things at once affect people checking IDs? Eye-tracking analysis of error patterns. Won first place at the 2024 TAMUSA graduate competition; presented at ARMADILLO and OPAM.</p>
+        </article>
+        <article class="card">
+          <h3>FACETS face database</h3>
+          <p>Multi-dimensional similarity spaces for a face database spanning cameras, emotions, time, and settings. Presented at the Psychonomic Society; manuscript in preparation.</p>
+        </article>
+        <article class="card">
+          <h3>Eye movements in physical ID checks</h3>
+          <p>Can eye-tracking metrics predict performance when authenticating a physical ID card? Presented at IACI and SWPA; manuscript in preparation.</p>
+        </article>
+        <article class="card">
+          <h3>Lighting as a memory cue</h3>
+          <p>The impact of lighting on facial recognition memory. Data collection and analysis complete; manuscript in preparation.</p>
+        </article>
+      </div>
+      <p style="margin-top:20px"><a class="link" href="cv.html">Full publication and presentation list in the CV →</a></p>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Nathan Wieters</span><a href="index.html">← Back to portfolio</a></footer>
+  <script src="theme.js"></script>
+</body>
+</html>
